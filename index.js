@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require("cors");
 const app = express();
 
-const routes = require("./routes")
+const routes = require("./routes/hotels")
 app.use("/api", routes)
 app.use(cors());
 
