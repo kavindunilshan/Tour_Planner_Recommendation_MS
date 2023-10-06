@@ -1,17 +1,17 @@
 const axios = require("axios");
 
 
-export const getRooms = async (hotel_id) => {
+export const getRooms = async (hotel_id, checkin_date, checkout_date, adults_number) => {
   const options = {
     method: 'GET',
     url: 'https://booking-com.p.rapidapi.com/v1/hotels/room-list',
     params: {
       hotel_id: hotel_id,
       currency: 'USD',
-      checkout_date: '2023-09-24',
+      checkout_date: checkout_date,
       locale: 'en-gb',
-      checkin_date: '2023-09-22',
-      adults_number_by_rooms: '4',
+      checkin_date: checkin_date,
+      adults_number_by_rooms: adults_number,
       units: 'metric'
     },
     headers: {

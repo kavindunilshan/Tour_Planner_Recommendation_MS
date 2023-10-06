@@ -1,9 +1,6 @@
 const axios = require("axios");
 // 7.2906
 // 80.6337
-
-
-
 const getHotels = async (longitude, latitude) => {
     const options = {
         method: 'GET',
